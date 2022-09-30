@@ -37,16 +37,17 @@ public class Main {
             } else {
                 System.out.println("некорректный ввод");
             }
-        } else if (clientOS == 1)
+        } else if (clientOS == 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        if (clientDeviceYear > 2015 && clientDeviceYear <= currentYear) {
-            System.out.println("У вас современный телефон, вы можете установить это приложение");
-        } else if (clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else {
-            System.out.println("некорректный ввод");
-        }
+            if (clientDeviceYear > 2015 && clientDeviceYear <= currentYear) {
+                System.out.println("У вас современный телефон, вы можете установить это приложение");
+            } else if (clientDeviceYear < 2015) {
+                System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            } else {
+                System.out.println("некорректный ввод");
+            }
 
+        }
     }
 
     //Task3
@@ -71,4 +72,5 @@ public class Main {
         return deliveryPeriod;
 
     }
+
 }
